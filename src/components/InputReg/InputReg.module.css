@@ -1,0 +1,26 @@
+.login {
+  width: 366px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: var(--UI-Lightest-Grey1, #F6F6F6);
+  border: none;
+}
+.login:hover {
+  border-radius: 6px;
+  background: var(--UI-Lightest-Grey, #D1D1D1);
+}
+.login:focus {
+  border-radius: 6px;
+  background: var(--UI-Lightest-Grey1, #F6F6F6);
+  box-shadow: 0 0 5px 0 #D9D9D9;
+}
+
+.text {
+  color: var(--UI-Grey, #707070);
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+/*# sourceMappingURL=InputReg.module.css.map */

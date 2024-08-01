@@ -1,0 +1,27 @@
+.button {
+  display: flex;
+  width: 365px;
+  height: 40px;
+  padding: 8px 0px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: var(--UI-Red, #E4163A);
+  color: white;
+  font-family: Montserrat, sans-serif;
+}
+.button:hover {
+  border-radius: 4px;
+  background: var(--UI-Light-Red, #FF5761);
+}
+.button:checked {
+  border-radius: 4px;
+  background: var(--UI-Dark-Red, #C60E2E);
+}
+.button:disabled {
+  border-radius: 4px;
+  background: var(--UI-Lightest-Grey1, #F6F6F6);
+}
+
+/*# sourceMappingURL=Button.module.css.map */
