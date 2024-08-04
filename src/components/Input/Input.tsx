@@ -6,7 +6,7 @@ interface Input extends InputHTMLAttributes<HTMLInputElement> {
     title?: string,
 }
 
-export const InputReg: FC<Input> = (props) => {
+export const Input: FC<Input> = (props) => {
     const {title, type, options, placeholder} = props
     return <>
         <h2 className={styles.text}>{title}</h2>

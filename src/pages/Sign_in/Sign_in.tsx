@@ -1,7 +1,7 @@
 import styles from "./Sign_in.module.sass"
 import {SubmitHandler, useForm} from "react-hook-form";
-import {Button} from "../../components/Button/Button.tsx";
-import {InputReg} from "../../components/Input/Input.tsx";
+import {Button} from "../../components/main.ts";
+import {Input} from "../../components/main.ts";
 import goal from "../../img/goal.png"
 import {FC, useMemo} from "react";
 
@@ -49,25 +49,25 @@ export const Sign_in: FC = () => {
         }
     }, [])
 
-
+    const isDisabled = !formState.isValid
 
     return (
         <div className={styles.signIn}>
             <div className={styles.section1}>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className={styles.nonem}>
-                        <InputReg title={'email adress'} type={'email'} options={emailOptions} placeholder={'enter your email address'} />
+                        <Input title={'email address'} type={'email'} options={emailOptions} placeholder={'enter your email address'} />
                     </div>
                     <div className={styles.error}>
                         {emailError && <p>{emailError}</p>}
                     </div>
                     <div className={styles.nonem}>
-                        <InputReg title={'password'} type={'password'} placeholder={'enter your password'} options={passOptions} />
+                        <Input title={'password'} type={'password'} placeholder={'enter your password'} options={passOptions} />
                     </div>
                     <div className={styles.error}>
                         <p style={{color: "red",}}>{passwordError}</p>
                     </div>
-                    <Button>sign in</Button>
+                    <Button disabled={isDisabled}>sign in</Button>
                 </form>
             </div>
 
