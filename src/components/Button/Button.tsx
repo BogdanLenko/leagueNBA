@@ -1,12 +1,15 @@
 import styles from "./Button.module.sass";
+import {FC, ButtonHTMLAttributes} from "react";
 
-interface ButtonProps {
-    text: string;
-}
-export function Button(props:ButtonProps) {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {}
 
-
+export const Button: FC<ButtonProps> = (props) => {
+    const {onClick, children} = props
     return <>
-        <button className={styles.button}>{props.text}</button>
+        <button className={styles.button}
+                onClick={onClick}
+        >
+            {children}
+        </button>
     </>
 }

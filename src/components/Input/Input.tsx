@@ -1,20 +1,18 @@
-import styles from './InputReg.module.css';
-import { FC } from 'react';
+import styles from './Input.module.css';
+import {FC, InputHTMLAttributes} from 'react';
 
-interface InputReg {
-    type: string,
+interface Input extends InputHTMLAttributes<HTMLInputElement> {
     options?: object,
-    placeholder: string,
+    title?: string,
 }
 
-export const InputReg: FC<InputReg> = (props) => {
-    
-    
+export const InputReg: FC<Input> = (props) => {
+    const {title, type, options, placeholder} = props
     return <>
-        <h2 className={styles.text}>{props.type}</h2>
+        <h2 className={styles.text}>{title}</h2>
         <input className={styles.login}
-               type={props.type}
-               {...props.options}
-               placeholder={props.placeholder}/>
+               type={type}
+               {...options}
+               placeholder={placeholder}/>
     </>
 }
