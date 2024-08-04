@@ -1,4 +1,5 @@
 import styles from './InputReg.module.css';
+import { FC } from 'react';
 
 interface InputReg {
     type: string,
@@ -6,7 +7,7 @@ interface InputReg {
     placeholder: string,
 }
 
-export function InputReg(props: InputReg) {
+export const InputReg: FC<InputReg> = (props) => {
     
     
     return <>
