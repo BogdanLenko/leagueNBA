@@ -1,0 +1,58 @@
+.button {
+  display: flex;
+  width: 36.5rem;
+  height: 4rem;
+  padding: 0.8rem 0;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 0.4rem;
+  background: #E4163A;
+  color: white;
+  font-family: Montserrat, sans-serif;
+}
+.button:hover {
+  display: flex;
+  width: 36.5rem;
+  height: 4rem;
+  padding: 0.8rem 0;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 0.4rem;
+  background: #E4163A;
+  color: white;
+  font-family: Montserrat, sans-serif;
+  background: #FF5761;
+}
+.button:checked {
+  display: flex;
+  width: 36.5rem;
+  height: 4rem;
+  padding: 0.8rem 0;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 0.4rem;
+  background: #E4163A;
+  color: white;
+  font-family: Montserrat, sans-serif;
+  background: #C60E2E;
+}
+.button:disabled {
+  display: flex;
+  width: 36.5rem;
+  height: 4rem;
+  padding: 0.8rem 0;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 0.4rem;
+  background: #E4163A;
+  color: white;
+  font-family: Montserrat, sans-serif;
+  background: #F6F6F6;
+  color: #D1D1D1;
+}
+
+/*# sourceMappingURL=Button.module.css.map */

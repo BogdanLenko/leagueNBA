@@ -1,0 +1,28 @@
+@import "../../sass/variables.sass"
+
+@mixin button
+  display: flex
+  width: 36.5rem
+  height: 4rem
+  padding: 0.8rem 0
+  justify-content: center
+  align-items: center
+  flex-shrink: 0
+  border-radius: 0.4rem
+  background: $red
+  color: white
+  font-family: Montserrat, sans-serif
+
+.button
+  @include button
+
+  &:hover
+    @include button
+    background: $light-red
+  &:checked
+    @include button
+    background: $dark-red
+  &:disabled
+    @include button
+    background: $lightest-grey1
+    color: $lightest-grey
